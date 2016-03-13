@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="/bower_components/semantic/dist/semantic.min.css"></link>
+		<title>Slack Relay</title>
+		<style>
+			.result {
+				white-space: pre;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ui segment">
+			<h1 class="ui header">
+				<i class="exchange icon"></i>
+				<div class="content">
+					Slack Relay
+					<div class="sub header">Token authenticated Slack relay server</div>
+				</div>
+			</h1>
+		</div>
+		<div class="ui segment" style="margin: 1rem;">
+			<h2 class="ui dividing header">Slack Relay</h2>
+			<p>
+				<b>Slack Relay</b> is a token authenticated Slack relay server for non-HTTPS compatible devices.
+			</p>
+			<table class="ui celled table">
+				<thead>
+					<tr>
+						<th class="collapsing">Function</th>
+						<th class="collapsing">URI</th>
+						<th>Parameters</th>
+						<th>Result</th>
+						<th class="collapsing">Submit</th>
+					</tr>
+				</thead>
+				<tbody id="table"></tbody>
+			</table>
+		</div>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/mustache.js/mustache.min.js"></script>
+		<script src="/js/app.js"></script>
+		<script>
+			$(function() {
+				renderFunctions('#table');
+			});
+		</script>
+	</body>
+</html>

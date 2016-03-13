@@ -8,6 +8,7 @@ Token authenticated Slack relay server for non-HTTPS compatible devices
 git clone https://github.com/TheConnMan/Slack-Relay.git
 cd Slack-Relay
 npm install
+bower install
 node index.js
 ```
 
