@@ -10,6 +10,10 @@ var functions = [{
 		name: 'Channel',
 		default: '#testing'
 	}, {
+		key: 'username',
+		name: 'Bot Username',
+		default: 'Slack Relay'
+	}, {
 		key: 'text',
 		name: 'Slack Message',
 		default: 'Test message'

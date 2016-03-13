@@ -14,6 +14,7 @@ RUN npm remove -g bower
 RUN apk del git
 
 ENV API_KEY changeme
+ENV HOOK_URL https://hooks.slack.com/services/test/hook/url
 
 EXPOSE 3000
 

@@ -18,7 +18,7 @@ Then access the API at [http://localhost:3000](http://localhost:3000).
 **Slack Relay** can also be run with Docker with the following commands:
 
 ```bash
-docker run -d -p 80:3000 --name slack-relay -e API_KEY=secret-key  theconnman/slack-relay
+docker run -d -p 80:3000 --name slack-relay -e API_KEY=secret-key -e HOOK_URL=https://hooks.slack.com/services/test/hook/url theconnman/slack-relay
 ```
 
 or built locally with:
